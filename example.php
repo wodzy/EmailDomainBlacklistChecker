@@ -1,7 +1,7 @@
 <?php
-require_once("Validator.php");
+require_once("src/Validator.php");
 
-$file = 'data/blacklistDomains.json';
+$file = 'src/data/blacklistDomains.json';
 $test = new Walidoukaci\EmailDomainBlacklistChecker\Validator();
 $response = $test->isBlacklisted($file, "john.doe@gmail.org");
 
