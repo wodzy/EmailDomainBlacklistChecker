@@ -1,9 +1,10 @@
 <?php
+require_once("src/Exception/CustomException.php");
 require_once("src/Validator.php");
 
 $file = 'src/data/blacklistDomains.json';
-$test = new Walidoukaci\EmailDomainBlacklistChecker\Validator();
-$response = $test->isBlacklisted($file, "john.doe@gmail.org");
+$test = new Wodzy\EmailDomainBlacklistChecker\Validator();
+$response = $test->isBlacklisted($file, "john.doe@yopmail.com");
 
 if ($response) {
 

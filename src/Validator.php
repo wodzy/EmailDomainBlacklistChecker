@@ -1,10 +1,10 @@
 <?php
 
-namespace Walidoukaci\EmailDomainBlacklistChecker;
+namespace Wodzy\EmailDomainBlacklistChecker;
 
-use Walidoukaci\EmailDomainBlacklistChecker\CustomException;
+use Wodzy\EmailDomainBlacklistChecker\CustomException;
 
-/* TODO: Test unit */
+/* TODO: Test unit  and check uppercase domain*/
 
 /**
  * Check if the domain is blacklisted
@@ -22,7 +22,7 @@ class Validator
             throw new CustomException\CustomException('Blacklist file not found');
         }
         $listDomains = $this->getDomainLists($file);
-        $domain = $this->getDomainFromEmail($email);
+        $domain = strtolower($this->getDomainFromEmail($email));
 
         return array_search($domain, $listDomains) === false;
     }

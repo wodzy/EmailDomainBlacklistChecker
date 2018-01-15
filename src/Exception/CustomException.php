@@ -1,6 +1,6 @@
 <?php
 
-namespace Walidoukaci\EmailDomainBlacklistChecker\CustomException;
+namespace Wodzy\EmailDomainBlacklistChecker\CustomException;
 
 class CustomException extends \Exception
 {
