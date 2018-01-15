@@ -4,15 +4,15 @@ namespace Wodzy\EmailDomainBlacklistChecker;
 
 use Wodzy\EmailDomainBlacklistChecker\CustomException;
 
-/* TODO: Test unit  and check uppercase domain*/
-
 /**
- * Check if the domain is blacklisted
  *
- * @package walidoukaci\EmailDomainBlacklistChecker
+ * This file is part of EmailDomainBlacklistChecker
+ * Check if the email domain is blacklisted
  * @author  Walid Oukaci <walid.oukaci@gmail.com>
- * @license http://www.opensource.org/licenses/mit-license.php The MIT License
+ * @license https://github.com/wodzy/EmailDomainBlacklistChecker/blob/master/LICENSE The MIT License
+ *
  */
+
 class Validator
 {
 
