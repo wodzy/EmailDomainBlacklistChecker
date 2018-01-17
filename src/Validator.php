@@ -40,9 +40,11 @@ class Validator
 
     private function getDomainFromEmail(string $email): string
     {
-        $arrayEmail = explode("@", $email);
-        $arrayEmail = explode(".", $arrayEmail[1]);
+        $emailDomain = substr(strrchr($email, "@"), 1);
+        $arrayEmail = explode('.', $emailDomain);
+        $tld = '.' . end($arrayEmail);
+        $sld = str_replace($tld, '', $emailDomain);
 
-        return current($arrayEmail);
+        return $sld;
     }
 }
