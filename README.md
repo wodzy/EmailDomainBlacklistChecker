@@ -12,7 +12,7 @@ Email Domain Blacklist Checker is easy to use, you can just add the domain name 
 
 ```php
 $file = 'src/data/blacklistDomains.json';
-$classValidator = new Walidoukaci\EmailDomainBlacklistChecker\Validator();
+$classValidator = new Wodzy\EmailDomainBlacklistChecker\Validator();
 $response = $classValidator->isBlacklisted($file, "john.doe@yopmail.com");
 
 if ($response) {
