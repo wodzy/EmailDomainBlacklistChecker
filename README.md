@@ -11,9 +11,8 @@ Email Domain Blacklist Checker is easy to use, you can just add the domain name 
 [PHP 7.1+](https://secure.php.net/releases/)
 
 ```php
-$file = 'src/data/blacklistDomains.json';
-$classValidator = new Wodzy\EmailDomainBlacklistChecker\Validator();
-$response = $classValidator->isBlacklisted($file, "john.doe@yopmail.com");
+
+$response = \Wodzy\EmailDomainBlacklistChecker\Validator::isBlacklisted('john@yopmail.com');
 
 if ($response) {
 

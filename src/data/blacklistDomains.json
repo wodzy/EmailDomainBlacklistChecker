@@ -1,3 +1,8 @@
 {
-  "domains": ["yopmail","crazymailing","getairmail","mohmal"]
+  "domains": [
+    "yopmail",
+    "crazymailing",
+    "getairmail",
+    "mohmal"
+  ]
 }
